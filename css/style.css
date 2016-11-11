@@ -636,7 +636,7 @@ form .am-selected .am-selected-btn{
 }
 #modal111 .am-tabs-bd{
     height:441px;
-    overflow:hidden;
+    overflow-y: scroll;
 }
 
 #modal222 .am-modal-dialog {
@@ -719,7 +719,7 @@ form .am-selected .am-selected-btn{
 }
 #modal222 .am-tabs-bd{
     height:447px;
-    overflow:hidden;
+    overflow-y: scroll;
 }
 
 #mychart{
