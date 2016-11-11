@@ -442,7 +442,7 @@ body {
 /*banner*/
 .banner--wrapped{
     height:350px;
-    background: url("http://www.d1ev.com/ldsite/image/datareportbg2.png") no-repeat center;
+    background: url("http://www.d1ev.com/new2016/special/ldsite/image/datareportbg2.png") no-repeat center;
 }
 #banner .banner{
     width:1200px;
@@ -533,16 +533,16 @@ body {
 #nav .header--wraped{
     width:1200px;
     /*outline:1px solid red;*/
-    padding:0 0 7px 7px;
+    padding-left:7px;
     position:relative;
-    border-bottom:2px solid #f1f1f1;
+    background: #f1f1f1;
+    margin-top:19px;
 }
 #nav .header--wraped .span_fontsize{
     display:inline-block;
     font-size:18px;
     color:#666;
-    margin-top:22px;
-    line-height:16px;
+    line-height:60px;
     padding:0 18px;
 }
 #nav .header--wraped .division{
@@ -553,7 +553,7 @@ body {
 #nav .header--wraped .active .span_fontsize{
     font-size:30px;
     color:#444;
-
+    font-weight:bold;
 }
 #nav .header--wraped .span_fontsize:hover{
     color: #f60;
@@ -565,7 +565,7 @@ body {
     display:none;
     line-height:1;
     /* background: #ebebeb; */
-    font-size:14px;
+    font-size:16px;
     margin:0;
     color:#666;
 }
@@ -573,19 +573,21 @@ body {
     display:block;
 }
 #nav .header--wraped .header--content span{
-    display:inline-block;
-    margin:24px 20px 0;
+    display: inline-block;
+    margin: 0 20px 0;
+    line-height: 60px;
+    padding-top: 2px;
 }
 #nav .header--wraped .header--content a{
     color:#666;
-    padding-bottom:15px;
 }
 #nav .header--wraped .header--content a:hover{
     color:#f60;
+
 }
 #nav .header--wraped .header--content a.active{
     color:#f60;
-    border-bottom: 2px solid #f60;
+    /*border-bottom: 2px solid #f60;*/
 }
 #nav .header--wraped .header--content .span--first{
     margin-left:20px;
@@ -618,6 +620,11 @@ body {
 }
 
 /*弹窗*/
+.am-modal#doc-modal-14 .am-modal-hd .am-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
 .am-modal#doc-modal-14 .am-modal-dialog{
     background: #fff;
     padding:40px 0;
@@ -750,3 +757,4 @@ body {
     }
 
 }
+

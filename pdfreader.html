@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="zh-CH">
+<html class="no-js" lang="zh-CN">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -107,7 +107,7 @@
         <div class="ws-left am-fl">
             <div class="am-sticky-placeholder" style="height: 310px; margin: 0px;">
                 <div class="share--wraped bdsharebuttonbox bdshare-button-style0-24" data-am-sticky="{top:100}"
-                     data-bd-bind="1478513951844" style="margin: 0px;">
+                     data-bd-bind="1478513951844" style="margin: 0;">
                     <div class="button--share share--border share--color1">
                         <a href="#"
                            class="bds_share_links bds_tsina sprite sprite-shareToSina iconfont icon-iconfontweibowukuang"
@@ -143,7 +143,7 @@
                 <div class="popup--wrapped am-text-center">
                     <i class="iconfont icon-buy"></i>
                     <p class="tip">试读已结束，如果您要继续阅读或下载，敬请购买</p>
-                    <p class="button am-btn"><span>购买所有报告</span>
+                    <p class="button am-btn"><span  data-content="开通行业报告" data-select="a" onclick="modal(this)">购买所有报告</span>
                     </p>
                     <p class="relation">
                         <span><i class="iconfont icon-iconfontyouhui"></i></span>
@@ -207,6 +207,19 @@
                 </div>
             </section>
         </div>
+        <section class="share--model">
+            <div class="am-sticky-placeholder" style="height: 310px; margin: 0px;">
+                <div class="share--wraped bdsharebuttonbox bdshare-button-style0-24" style="margin: 0;">
+                    <div class="button--share share--border share--color1">
+                        <a href="#" class="bds_share_links bds_tsina sprite sprite-shareToSina iconfont icon-iconfontweibowukuang" data-cmd="tsina" title="分享到新浪微博"></a></div>
+                    <div class="button--share share--border share--color2">
+                        <a href="#" class="bds_share_links bds_weixin sprite sprite-shareToWeixin iconfont icon-pengyouquan" data-cmd="weixin" title="分享到微信"></a></div>
+                    <div class="button--share share--color3">
+                        <a href="#" class="bds_share_links bds_qzone sprite sprite-shareToQQ iconfont icon-kongjian-copy" data-cmd="qzone" title="分享到QQ空间"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
     <!--other model-->
     <div class="ws-fixed">
@@ -300,29 +313,47 @@
             </div>
         </div>
     </div>
+    <!--  FREE SERVER -->
+    <div class="am-modal am-modal-no-btn" tabindex="-1" id="doc-modal-14">
+        <div class="am-modal-dialog">
+            <div class="am-modal-hd">
+                <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close="">×</a>
+            </div>
+            <form action="http://www.d1ev.com/contents/index/postservers" method="post" class="am-form" data-am-validator="" id="doc-vld-free" onsubmit="alert('提交成功！')">
+                <div class="am-alert" data-am-alert="">
+                    <p id="modal--head">申请免费试用专属店铺</p>
+                </div>
+                <div class="dialog--content">
+                    <div class="dialog_input">
+                        <div class="am-form-group am-form-icon">
+                            <i class="am-icon-home" aria-hidden="true"></i>
+                            <input type="text" name="company" id="yourcompany2" minlength="1" class="am-form-field" placeholder="输入企业名称" required="">
+                        </div>
+                        <div class="am-form-group am-form-icon">
+                            <i class="am-icon-user"></i>
+                            <input type="text" name="truename" id="yourname2" minlength="1" class="am-form-field" placeholder="输入联系人姓名" required="">
+                        </div>
+                        <div class="am-form-group am-form-icon">
+                            <i class="am-icon-volume-control-phone"></i>
+                            <input type="text" name="phone" id="yourcall2" class="js-pattern-mobile am-form-field" placeholder="输入联系电话" required="" pattern="^1((3|5|8){1}\d{1}|70)\d{8}$">
+                        </div>
+                        <div style="display:none;">
+                            <input type="text" name="type" id="modal--type" value="">
+                        </div>
+                    </div>
+                    <div>
+                        <a href="javascript:;">
+                            <button id="tijiao2" class=" tijiao--button">提 交</button>
+                        </a>
+                    </div>
+                    <div class="tijiao">
+                        <span class=" tip">请留下您的联系方式，方便我们与您联系，针对问题详细沟通</span>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
 </main>
-<script>
-    setTimeout(function(){
-        $(function(){
-            $(document).scroll(function(){
-                var top = $(document).scrollTop();
-                if(top < 300){
-                    $('.ws-fixed-scroll').hide();
-                }else{
-                    $('.ws-fixed-scroll').show();
-                }
-            });
-        });
-    },1000);
-
-</script>
-<noscript>&lt;iframe src="//www.googletagmanager.com/ns.html?id=GTM-KJ6QXR" height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</noscript>
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-KJ6QXR');</script>
-<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24","bdCustomStyle":"http://www.d1ev.com/new2016/src/public/css/shareto.css"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
 <!--[if (gte IE 9)|!(IE)]><!-->
 <script src="http://www.d1ev.com/new2016/src/external/js/jquery.2.2.3.min.js"></script>
 <!--<![endif]-->
@@ -336,6 +367,55 @@
 <script src="http://www.d1ev.com/new2016/src/public/js/common.js"></script>
 <script src="http://www.d1ev.com/new2016/src/external/js/jquery.timeago/jquery.timeago.js"></script>
 <script src="http://www.d1ev.com/new2016/src/public/js/page.js"></script>
+<script>
+    setTimeout(function(){
+        $(function(){
+            $(document).scroll(function(){
+                var top = $(document).scrollTop();
+                if(top < 300){
+                    $('.ws-fixed-scroll').hide();
+                }else{
+                    $('.ws-fixed-scroll').show();
+                }
+            });
+        });
+    },1000);
+    // 报告
+    function modal(thisone){
+
+        var $select=$(thisone).attr("data-select");
+        var $type=$(thisone).attr("data-content");
+        var $head=$("#modal--head");
+        var $modaltype=$("#modal--type");
+        $head.text($type);$modaltype.text($type);$modaltype.attr('value',$type);
+        if($select==="a"){
+            $("#doc-modal-14").modal({closeViaDimmer: 0, width: 590, height: 401});
+        }else if($select==="b"){
+            $("#doc-modal-13").modal({closeViaDimmer: 0, width: 590, height: 485});
+        }
+
+    }
+    (function ($) {
+        if ($.AMUI && $.AMUI.validator) {
+            // 增加多个正则
+            $.AMUI.validator.patterns = $.extend($.AMUI.validator.patterns, {
+                colorHex: /^(#([a-fA-F0-9]{6}|[a-fA-F0-9]{3}))?$/
+            });
+            // 增加单个正则
+            $.AMUI.validator.patterns.yourpattern = /^your$/;
+            // 增加单个正则
+            $.AMUI.validator.patterns.mobile = /^1((3|5|8){1}\d{1}|70)\d{8}$/;
+        }
+    })(window.jQuery);
+</script>
+<noscript>&lt;iframe src="//www.googletagmanager.com/ns.html?id=GTM-KJ6QXR" height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KJ6QXR');</script>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24","bdCustomStyle":"http://www.d1ev.com/new2016/src/public/css/shareto.css"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
 <div style="display:none"><script>var _hmt=_hmt||[];(function(){var hm=document.createElement("script");hm.src="//hm.baidu.com/hm.js?c1d54a092f01be0215b4487856c2c6f6";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm,s);})();</script><script type="text/javascript">var cnzz_protocol=(("https:"==document.location.protocol)?" https://":" http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_2469655'%3E%3C/span%3E%3Cscript src='"+cnzz_protocol+"s13.cnzz.com/stat.php%3Fid%3D2469655' type='text/javascript'%3E%3C/script%3E"));</script><span id="cnzz_stat_icon_2469655"><a href="http://www.cnzz.com/stat/website.php?web_id=2469655" target="_blank" title="站长统计">站长统计</a></span><script src=" http://s13.cnzz.com/stat.php?id=2469655" type="text/javascript"></script><script src="http://c.cnzz.com/core.php?web_id=2469655&amp;t=z" charset="utf-8" type="text/javascript"></script><script type="text/javascript">var cnzz_protocol=(("https:"==document.location.protocol)?" https://":" http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254528018'%3E%3C/span%3E%3Cscript src='"+cnzz_protocol+"s95.cnzz.com/stat.php%3Fid%3D1254528018' type='text/javascript'%3E%3C/script%3E"));</script><span id="cnzz_stat_icon_1254528018"><a href="http://www.cnzz.com/stat/website.php?web_id=1254528018" target="_blank" title="站长统计">站长统计</a></span><script src=" http://s95.cnzz.com/stat.php?id=1254528018" type="text/javascript"></script><script src="http://c.cnzz.com/core.php?web_id=1254528018&amp;t=z" charset="utf-8" type="text/javascript"></script></div>
 <script type="text/javascript" id="">(function(){var e="https:"==location.protocol?"https://":"http://",l=e+"uluai.com.cn/cmp",n=5007,e=function(){function e(a){var f=b.getElementsByTagName("script")[0]||b.body||b.head;f.parentNode.insertBefore(a,f)}function p(a,b){b&&(a.addEventListener?a.onload=b:a.onreadystatechange=function(){a.readyState in{loaded:1,complete:1}&&(a.onreadystatechange=null,b())})}function q(a,f,g){var c=b.createElement("script");c.type="text/javascript";c.async=!0;c.src=a;p(c,f);g&&(c.onerror=g);e(c)}var b=document;
     q(l+"/cmp.api?r\x3d"+encodeURIComponent(b.referrer||"")+"\x26s\x3d"+n+"\x26u\x3d"+encodeURIComponent(b.location.href));window._ycnt_cb=function(a,f){a=a||[];for(var g=0;g<a.length;g++){var c=a[g],d=f;d&&(c=c+(0<c.indexOf("?")?"\x26":"?")+"u\x3d"+d);var d=b.createElement("iframe"),k="_ynrifr"+parseInt(32E3*Math.random());d.id=k;d.height="0";d.width="0";d.style.display="none";d.style.visibility="hidden";d.style.position="absolute";d.src="about:blank;";e(d);var h=void 0;try{var h=b.all?b.frames[k].document:

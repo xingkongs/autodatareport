@@ -984,3 +984,376 @@ body {
     margin:18px auto 31px;
     line-height:1.7;
 }
+
+/*弹窗*/
+.am-modal#doc-modal-14 .am-modal-hd .am-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.am-modal#doc-modal-14 .am-modal-dialog{
+    background: #fff;
+    padding:40px 0;
+}
+.am-modal#doc-modal-14 .am-alert{
+    background: #fff;
+    color:#444;
+    font-size:22px;
+    padding:0 0 20px;
+    margin:0;
+    border:1px solid #fff;
+
+}
+.am-modal#doc-modal-14 .am-modal-dialog p{
+    text-align:center;
+}
+.am-modal#doc-modal-14 .am-modal-dialog textarea{
+    font-size:14px;
+    color:#b2b2b2;
+    padding:10px;
+    margin-bottom:20px;
+}
+.am-modal#doc-modal-14 .am-form-group{
+    margin:0;
+}
+.am-modal .am-modal-dialog #yourcall,.am-modal-dialog #yourcompany,.am-modal-dialog #yourname{
+    width:100%;
+    font-size:14px;
+    color:#b2b2b2;
+    padding:10px;
+    margin-bottom:15px;
+}
+.am-modal .am-modal-dialog #yourcall2,.am-modal-dialog #yourcompany2,.am-modal-dialog #yourname2{
+    width:100%;
+    font-size:14px;
+    color:#b2b2b2;
+    padding:10px;
+    margin-bottom:15px;
+}
+.am-modal#doc-modal-14 .tijiao{
+    line-height:1;
+    background: #f1f1f1;
+}
+.am-modal#doc-modal-14 .tijiao .tip{
+    font-size:14px;
+    color:#f60;
+    line-height:48px;
+
+}
+.am-modal#doc-modal-14 .tijiao .am-fr{
+    font-size:16px;
+}
+.am-modal#doc-modal-14 .tijiao--button{
+    width:146px;
+    line-height:29px;
+    background: #f60;
+    color:#fff;
+    border:none;
+    margin:34px auto 45px;
+}
+.am-modal#doc-modal-14 .tijiao--cancel{
+    margin:16px 30.6px;
+    color:#f60;
+}
+.am-modal#doc-modal-14 .dialog_input{
+    padding:0 9.58rem;
+}
+.am-modal#doc-modal-14 .am-container--re{
+    padding:0 9.58rem;
+}
+.am-modal#doc-modal-14 .am-form-icon{
+    color:#f60;
+}
+.am-modal#doc-modal-14 .dialog--content .am-field-valid{
+    border-color:#ccc!important;
+}
+.am-modal#doc-modal-14 .am-form input[type=text],.am-form-field{
+    border:none;
+    border-bottom:1px solid #f60;
+}
+.am-modal#doc-modal-14 .am-form-icon .am-form-field {
+    padding-left: 45px!important;
+}
+.am-modal .am-form-icon [class*=am-icon-] {
+    left: 1em;
+}
+.am-modal .am-field-error, .am-form-error .am-form-field,.am-form-success .am-form-field {
+    -webkit-box-shadow:none;
+    box-shadow:none;
+}
+.am-modal .am-field-error:focus,.am-modal .am-form-error .am-form-field:focus ,.am-modal .am-form input[type=text]:focus{
+    background-color: #fefffe;
+    border-color: #cf2d27;
+    -webkit-box-shadow:none!important;
+    box-shadow:none!important;
+}
+.am-form-success .am-checkbox, .am-form-success .am-checkbox-inline, .am-form-success .am-form-help, .am-form-success .am-form-label, .am-form-success .am-radio, .am-form-success .am-radio-inline, .am-form-success label{
+    color:#333;
+}
+.am-modal .hope--select {
+    text-align: left;
+}
+.am-modal label {
+    font-size:14px;
+    color:#333;
+    font-weight:normal;
+    margin:0 29px 0 10px;
+}
+.am-modal label span{
+    position:relative;
+    top:-2px;
+}
+.am-modal .hope-head{
+    font-size:16px;
+    text-align:left;
+    padding:0;
+}
+.am-modal .selectservers{
+    margin-top:36px;
+}
+@media(max-width:640px){
+    .am-modal .am-modal-dialog{
+        width:90%!important;
+    }
+    .am-modal .dialog_input{
+        padding:0 1rem;
+    }
+    .am-modal .am-container--re{
+        padding:0 1rem;
+    }
+
+}
+
+
+.share--model {
+    width:320px;
+    margin:0 auto;
+    position:fixed;
+    bottom:0;
+    display:none;
+    /* 包裹可以加inline-block */
+}
+.share--model .share--wraped {
+    /*outline:1px solid red;*/
+    position: relative;
+    cursor: pointer;
+}
+.share--model .button--share {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    background: #fafafa;
+    cursor: default;
+}
+.share--model .icon-bottom {
+    margin-top: 10px;
+}
+.share--model .button--share2 {
+    line-height: 20px;
+    padding: 8px 0;
+    color: #f1f1f1;
+    cursor: pointer;
+}
+.share--model .icon-content {
+    display: block;
+    font-size: 14px;
+    line-height: 1;
+    color: #ccc;
+}
+.share--model .share--border {
+    border-bottom: 1px solid #eee;
+    position: relative;
+}
+.share--model .share--color1 .sprite {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    background: none;
+    color: #999;
+    line-height: 60px;
+    font-size: 36px;
+    background:none;
+    /* background: url("../images/ws_share.png") no-repeat;
+     background-position: -60px -60px;*/
+}
+.share--model .share--color2 .sprite {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    background: none;
+    color: #999;
+    line-height: 60px;
+    font-size: 36px;
+    background: none;
+    /*
+  background: url("../images/ws_share.png") no-repeat;
+  background-position: 0 -60px;*/
+}
+.share--model .share--color3 .sprite {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    background: none;
+    color: #999;
+    line-height: 60px;
+    font-size: 36px;
+    background: none;
+    /*
+  background: url("../images/ws_share.png") no-repeat;
+  background-position: -120px -60px;*/
+}
+.share--model .share--color4 .sprite{
+    background:none;
+    position:relative;
+    font-size: 30px;
+    color: #999;
+    line-height:34px;
+}
+.share--model .share--color4:hover .sprite{
+    color:#fff;
+}
+.share--model .share--color5:hover .sprite{
+    color:#fff;
+}
+.share--model .share--color4 .sprite span{
+    position:absolute;
+    top:0;
+    left:0;
+    font-size:12px;
+    width:100%;
+    text-align:center;
+
+}
+.share--model .share--color5 .sprite{
+    background:none;
+    color:#999;
+    font-size:26px;
+    line-height:34px;
+}
+.share--model .share--color1:hover {
+    background: #f74864;
+}
+.share--model .share--color1:hover .sprite {
+    background-position: -60px 0;
+}
+.share--model .share--color2:hover {
+    position: relative;
+    background: #1ec354;
+}
+.share--model .share--color2:hover .sprite {
+    background-position: 0 0;
+}
+.share--model .share--color2:hover .weixin_m {
+    position: absolute;
+    top: 0;
+    left: 60px;
+    display: none;
+}
+.share--model .share--color3:hover {
+    background: #ffce0b;
+}
+.share--model .share--color3:hover .sprite {
+    background-position: -120px 0;
+}
+.share--model .share--color4:hover {
+    background: #f60;
+    color: #f60;
+}
+.share--model .share--color4:hover i {
+    background-position: -236px -85px;
+}
+.share--model .share--color4:hover .icon-content {
+    color: #fff;
+}
+.share--model .share--color5:hover {
+    background: #f60;
+}
+.share--model .share--color5:hover i {
+    background-position: -158px -85px;
+}
+.share--model .share--color5:hover .icon-content {
+    color: #fff!important;
+}
+.share--model .share--color4 .sprite span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 26px;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+.share--model .share--color4:hover .sprite span{
+    color:#f60;
+}
+.share--model .share--color1:hover a {
+    /*background-position: -85px -274px;*/
+    color: #fff!important;
+}
+.share--model .share--color2:hover a {
+    /*background-position: -5px -314px;*/
+    color: #fff!important;
+}
+.share--model .share--color3:hover a {
+    /*background-position: -305px -240px;*/
+    color: #fff!important;
+}
+@media(max-width:640px){
+    body{
+        padding:0;
+    }
+    .ws-content{
+        width:100%;
+    }
+    .ws-content {
+        width: 100%;
+        min-width: 320px;
+        padding: 0;
+        max-width:320px;
+    }
+    .ws-fix-head,.ws-foot-bg,.ws-left,.ws-fixed{
+        display:none;
+    }
+    .ws-content .ws-md h1 {
+        font-size: 24px;
+    }
+    .am-sticky-placeholder{
+        height:auto!important;
+    }
+    .ws-content .ws-md,.ws-content .ws-right {
+        width:320px;
+        margin:0 auto;
+        float:none;
+    }
+    .share--model .button--share{
+        display:inline-block;
+        width: 32%;
+    }
+    #popup,#popup2 {
+        padding: 20px 20px 24px;
+    }
+    #popup p.tip {
+        margin: 10px auto 15px;
+    }
+    #popup p.relation {
+        margin: 10px auto 0;
+    }
+    .ws-right{
+        padding-bottom:70px;
+    }
+    .share--model {
+        display:block;
+    }
+    .am-modal#doc-modal-14 .dialog_input {
+        padding: 0 1rem;
+    }
+    .am-modal#doc-modal-14 .tijiao {
+        padding:0 1rem;
+    }
+    ol, ul {
+        padding-left: 2em;
+        width: 100%!important;
+    }
+}
+

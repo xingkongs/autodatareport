@@ -39,7 +39,7 @@ function setOp(obj,op){
     if(typeof(op)=="undefined")
         var op=0;
     if(!(op==1 || op==2 || op==3 || op==4 || op==5)){
-		console.log(1);
+		//console.log(1);
         jQuery.getJSON("http://www.d1ev.com/Contents/Industry/user_hysj",pars,function(data){
 			data.option1.optionToContent = new Function("opt", data.option1.optionToContent);
 			data.option2.optionToContent = new Function("opt", data.option2.optionToContent);
@@ -112,8 +112,8 @@ function setOp(obj,op){
                 break;
         }
     }else{//op=5
-		console.log(op);
-        if($('#form'+op+'_sbm select')[2].value==""){
+		//console.log(op);
+        if($('#form'+op+'_sbm select')[2].value=="all"){
             setOption5('');
             return false;
         }
@@ -143,6 +143,20 @@ function setOp_r(obj0,pn){			//Array('0','2')
     obj.series=op_s_d;
     return $.extend({},obj);
 }
+// function setOp_r(obj0,pn){
+//     var obj2=$.extend({},obj0);
+//     for(var i=0;i<pn.length;i++){
+//         if(pn[i]==="a"){
+//             obj2.legend.data[i]="";
+//             obj2.series[i].name="";
+//             for(var j=0;j<obj2.series[i].data.length;j++){
+//                 obj2.series[i].data[j]="";
+//             }
+//         }
+//
+//     }
+//     return obj2;
+// }
 function setOption5(data){
     if(data){
         for(var k in data){
@@ -194,20 +208,21 @@ function resetOP(obj,from,option,arr){
     from.setOption(setOp_r(option,arr));
 }
 function setdata_ffy(obj0){
-    obj=JSON.parse(JSON.stringify(obj0));
+    var obj=$.extend({},obj0);
+    // obj=JSON.parse(JSON.stringify(obj0));
     obj.title.text = obj.title.text_ffy;
     obj.xAxis[0].data = obj.xAxis[0].data_ffy;
     obj.series = obj.series_ffy;
-    return $.extend({},obj);
+    return obj;
 }
 function b_hide(obj,hos){
-    if(hos==1){
-        $(obj).parent().next().slideDown();
-        $(obj).parent().next().next().slideDown();
-    }else{
-        $(obj).parent().next().slideUp();
-        $(obj).parent().next().next().slideUp();
-    }
+    // if(hos==1){
+    //     $(obj).parent().next().slideDown();
+    //     $(obj).parent().next().next().slideDown();
+    // }else{
+    //     $(obj).parent().next().slideUp();
+    //     $(obj).parent().next().next().slideUp();
+    // }
 }
 // 发布机构切换
 

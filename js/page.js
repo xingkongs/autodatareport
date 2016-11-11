@@ -411,7 +411,7 @@ $(function() {
             .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
                 $this.removeClass(x + ' animated')
             });
-    };
+    }
     $('.ev-other-logo a').mouseover(function(e){
         e.preventDefault();
         var $this= $(this);

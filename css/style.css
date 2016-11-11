@@ -1,7 +1,7 @@
 /*banner*/
 #banner .banner--wrapped{
     height:350px;
-    background: url("http://www.d1ev.com/ldsite/image/datareportbg.png") no-repeat center;
+    background: url("http://www.d1ev.com/new2016/special/ldsite/image/datareportbg.png") no-repeat center;
 }
 #banner .banner{
     width:1200px;
@@ -83,7 +83,7 @@
 /*banner*/
 .banner--wrapped{
     height:350px;
-    background: url("http://www.d1ev.com/ldsite/image/datareportbg.png") no-repeat;
+    background: url("http://www.d1ev.com/new2016/special/ldsite/image/datareportbg.png") no-repeat;
 }
 #banner .banner{
     width:1200px;
@@ -214,8 +214,8 @@
     color:#fff;
     border:1px solid #f60;
 }
-.sx_con a .monthoryear,.gjsj_con a .monthoryear{
-    margin-right:20px;
+.sx_con a,.gjsj_con a{
+    margin-right:5px;
     font-size:18px;
     color:#333;
 }
@@ -240,6 +240,9 @@ form .am-icon-caret-down:before {
     margin:0;
     line-height:38px;
     border-bottom:1px dashed #ccc;
+}
+.form_sales .cur.dft{
+    font-size:14px;
 }
 .gjsj_con form p{
     margin:0;
@@ -356,10 +359,10 @@ form .am-selected .am-selected-btn{
 }
 
 .gjsj { position:relative; margin-top:-20px;}
-.gjsj .err {display:none;position:absolute; z-index:3; top:320px; width:50%; left:26%; border:1px #f60 solid; background-color:#FFFBF8; font-size:14px; text-align:center; padding:40px 0; line-height:30px;}
-.gjsj .err_bg {display:none;position:absolute; z-index:2; top:2px; width:100%; left:0; height:680px;  }
-.gjsj .err1 {display:none;position:absolute; z-index:3; top:320px; width:50%; left:26%; border:1px #f60 solid; background-color:#FFFBF8; font-size:14px; text-align:center; padding:40px 0; line-height:30px;}
-.gjsj .err_bg1 {display:none;position:absolute; z-index:2; top:100px; width:100%; left:0; height:740px; }
+.gjsj .err {position:absolute; z-index:3; top:320px; width:50%; left:26%; border:1px #f60 solid; background-color:#FFFBF8; font-size:14px; text-align:center; padding:40px 0; line-height:30px;}
+.gjsj .err_bg {position:absolute; z-index:2; top:2px; width:100%; left:0; height:680px;  }
+.gjsj .err1 {position:absolute; z-index:3; top:320px; width:50%; left:26%; border:1px #f60 solid; background-color:#FFFBF8; font-size:14px; text-align:center; padding:40px 0; line-height:30px;}
+.gjsj .err_bg1 {position:absolute; z-index:2; top:100px; width:100%; left:0; height:740px; }
 .gjsj .err a{color:#f60;}
 
 
@@ -402,34 +405,39 @@ form .am-selected .am-selected-btn{
     background: #56a8fc;
 }
 #collapse-head  .footer_btn.btn1 .img--wrapper{
-    background: #eee url("http://www.d1ev.com/ldsite/image/shujus.png") no-repeat center;
+    background: #eee url("http://www.d1ev.com/new2016/special/ldsite/image/shujus.png") no-repeat center;
 
 }
 #collapse-head  .footer_btn.btn2 .img--wrapper{
-    background: #eee url("http://www.d1ev.com/ldsite/image/chanliangs.png") no-repeat center;
+    background: #eee url("http://www.d1ev.com/new2016/special/ldsite/image/chanliangs.png") no-repeat center;
 
 }
 #collapse-head  .footer_btn.btn3 .img--wrapper{
-    background: #eee url("http://www.d1ev.com/ldsite/image/peitaos.png") no-repeat center;
+    background: #eee url("http://www.d1ev.com/new2016/special/ldsite/image/peitaos.png") no-repeat center;
 
 }
 #collapse-head  .active .footer_btn.btn1 .img--wrapper,
 #collapse-head .footer_btn.btn1:hover .img--wrapper{
-    background: #f60 url("http://www.d1ev.com/ldsite/image/shujus2.png") no-repeat center;
+    background: #f60 url("http://www.d1ev.com/new2016/special/ldsite/image/shujus2.png") no-repeat center;
 }
 #collapse-head  .active .footer_btn.btn2 .img--wrapper,
 #collapse-head .footer_btn.btn2:hover .img--wrapper{
-    background: #40dc9f url("http://www.d1ev.com/ldsite/image/chanliangs2.png") no-repeat center;
+    background: #40dc9f url("http://www.d1ev.com/new2016/special/ldsite/image/chanliangs2.png") no-repeat center;
 }
 #collapse-head  .active .footer_btn.btn3 .img--wrapper,
 #collapse-head .footer_btn.btn3:hover .img--wrapper{
-    background: #56a8fc url("http://www.d1ev.com/ldsite/image/peitaos2.png") no-repeat center;
+    background: #56a8fc url("http://www.d1ev.com/new2016/special/ldsite/image/peitaos2.png") no-repeat center;
 }
 #collapse-head  .footer_btn:hover .footer_span{
     right:40px;
 }
 
 /*弹窗*/
+.am-modal#doc-modal-14 .am-modal-hd .am-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
 .am-modal#doc-modal-14 .am-modal-dialog{
     background: #fff;
     padding:40px 0;
@@ -627,7 +635,7 @@ form .am-selected .am-selected-btn{
     float: none;
 }
 #modal111 .am-tabs-bd{
-    height:435px;
+    height:441px;
     overflow:hidden;
 }
 
@@ -666,7 +674,6 @@ form .am-selected .am-selected-btn{
 #modal222 .am-nav-tabs>li>a {
     margin-right: 0;
     color: #444;
-    line-height:1;
 }
 #modal222 .am-table>thead {
     color: #333;
@@ -711,6 +718,11 @@ form .am-selected .am-selected-btn{
     content: "\f107";
 }
 #modal222 .am-tabs-bd{
-    height:435px;
+    height:447px;
     overflow:hidden;
+}
+
+#mychart{
+    overflow-y:scroll!important;
+    overflow-x:hidden!important;
 }
