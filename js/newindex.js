@@ -1,3 +1,16 @@
+(function ($) {
+    $.getUrlParam = function (name)
+    {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+        //console.log(window.location);
+        var r = window.location.search.substr(1).match(reg);
+        //console.log('r:'+r);
+        if (r != null)
+            return (r[2]);
+        return null;
+    }
+})(jQuery);
+
 $(document).ready(function() {
     // 基于准备好的dom，初始化echarts图表
     myChart1 = echarts.init(document.getElementById('tb1'),'macarons');
@@ -5,7 +18,7 @@ $(document).ready(function() {
     myChart3 = echarts.init(document.getElementById('tb3'),'macarons');
     myChart4 = echarts.init(document.getElementById('tb4'),'macarons');
 
-    setOp();
+
     $(".btns").click(function(){
         setOp(this,$(this).attr('opval'));
     });
@@ -21,8 +34,12 @@ $(document).ready(function() {
             $this=$this.closest(".form_time");
         }
         //console.log($this);
+		//console.log($this+'&&&'+$type);
         setOp($this,$type);
+		
     });
+
+
 
     getSelect('scatid','clh','all','');
     getSelect('scatid5','clh','all','');
@@ -30,7 +47,64 @@ $(document).ready(function() {
     getSelect('catid1','gj_m_output','','');
     getSelect('catid2','','','');
 
+	//
+	var pinpai_name = decodeURI($.getUrlParam('pinpai'));
+    console.log(pinpai_name === "null");
+    if(pinpai_name!=="null"){
+
+		setTimeout(function(){
+
+			var chexing_name=decodeURI($.getUrlParam('chexing'));
+			console.log(pinpai_name+'__'+chexing_name);
+			$('#scatid').val(pinpai_name);
+			$('#scatid').trigger('changed.selected.amui');		
+			setTimeout(function(){
+				$('#stcatid').val(chexing_name);
+				$('#stcatid').trigger('changed.selected.amui');				
+			},100);
+		},110);		
+	}else{
+		setOp();
+        inittable();
+	}
+
+
+	
 });
+
+function inittable(){
+    var $table1=$('#catid2');
+    var $table2=$('#scatid2');
+    var $table3=$('#stcatid2');
+    var $btn=$table3.closest("label").siblings("input.am-btn");
+    function init(){
+        $table1.val("乘用车");
+        $table1.trigger('changed.selected.amui');
+        setTimeout(function(){
+            init2();
+        },100);
+    }
+    function init2(){
+        $table2.val("宝马(BMW)牌");
+        $table2.trigger('changed.selected.amui');
+        setTimeout(function(){
+            init3();
+        },100);
+
+    }
+    function init3(){
+        $table3.val("BMW7201AMHEV(BMW530Le)");
+        $table3.trigger('changed.selected.amui');
+        setTimeout(function(){
+            $btn.click();
+        },100);
+
+    }
+    setTimeout(function(){
+        init();
+    },100);
+}
+	 
 function setOp(obj,op){
     //console.log(op);
     var timestamp=new Date().getTime();
@@ -113,7 +187,8 @@ function setOp(obj,op){
         }
     }else{//op=5
 		//console.log(op);
-        if($('#form'+op+'_sbm select')[2].value=="all"){
+        if($('#form'+op+'_sbm select')[2].value=="all"||$('#form'+op+'_sbm select')[2].value==""){
+            ws.ws_alert($('.ws_alert'),"请选择 种类/品牌/车型",2000);
             setOption5('');
             return false;
         }
@@ -248,7 +323,7 @@ $(function(){
     arr[0]=$('#hysj').offset().top;
     arr[1]=$('#gjsj').offset().top;
     arr[2]=$('#table').offset().top;
-    $('#collapse-head a').click(function(){
+    $('#collapse-head').find('a').click(function(){
         var h=arr[$(this).index()];
         //alert(arr[$(this).index()]);
         $('html,body').animate({scrollTop:arr[$(this).index()]},500);
@@ -318,3 +393,7 @@ function modal(thisone){
         $.AMUI.validator.patterns.mobile = /^1((3|5|8){1}\d{1}|70)\d{8}$/;
     }
 })(window.jQuery);
+
+
+
+

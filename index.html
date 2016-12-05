@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="//at.alicdn.com/t/font_dj0f801lqqsyk3xr.css">
     <link rel="stylesheet" href="http://www.d1ev.com/new2016/src/public/css/common.css">
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
 <main>
@@ -2527,6 +2528,7 @@
             </form>
         </div>
     </div>
+    <div class="ws_alert"></div>
 </main>
 
 <!--[if (gte IE 9)|!(IE)]><!-->
@@ -2542,6 +2544,37 @@
 <script src="http://www.d1ev.com/new2016/src/external/js/headroom.js"></script>
 <script src="http://www.d1ev.com/new2016/src/public/js/common.js"></script>
 <script src="js/newindex.js"></script>
+<script>
+
+        function getUrlParam (name){
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+            //console.log(window.location);
+            var r = window.location.search.substr(1).match(reg);
+            //console.log(r);
+            if (r != null)
+                return unescape(r[2]);
+            return null;
+        }
+        var timestamp=new Date().getTime();
+        var $b=getUrlParam('pinpai');
+        var $mm=getUrlParam('chexing');
+        var myChart3 = echarts.init(document.getElementById('tb3'),'macarons');
+        $.ajax({
+            type: "post",
+            url: "http://www.d1ev.com/Contents/Industry/user_hysj",
+            dataType: "json",
+            data: {time: timestamp, year_f: "2015",month_f:"10",year_l:"2016",month_l:"10",op:"3",b:$b,mm:$mm},
+            success: function (data) {
+                //console.log(data)
+                data.option3.optionToContent = new Function("opt", data.option3.optionToContent);
+                option3=data.option3;
+                myChart3.setOption(option3);
+            }
+        });
+
+
+
+</script>
 <script src="http://www.d1ev.com/new2016/special/ldsite/js/perfect-scrollbar.js"></script>
 <!--统计代码-->
 <div style="display:none"><script>var _hmt=_hmt||[];(function(){var hm=document.createElement("script");hm.src="//hm.baidu.com/hm.js?c1d54a092f01be0215b4487856c2c6f6";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm,s);})();</script><script type="text/javascript">var cnzz_protocol=(("https:"==document.location.protocol)?" https://":" http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_2469655'%3E%3C/span%3E%3Cscript src='"+cnzz_protocol+"s13.cnzz.com/stat.php%3Fid%3D2469655' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">var cnzz_protocol=(("https:"==document.location.protocol)?" https://":" http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254528018'%3E%3C/span%3E%3Cscript src='"+cnzz_protocol+"s95.cnzz.com/stat.php%3Fid%3D1254528018' type='text/javascript'%3E%3C/script%3E"));</script></div>

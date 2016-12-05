@@ -79,7 +79,7 @@ $(function(){
         var $doc = $(document);
 
         var ratio = $lheightBg.height()/$lheight.height();
-        console.log(ratio);
+        //console.log(ratio);
         if(ratio<1){
             flash_hover($lheightBg,$lheight,$rheightBg,$rheight);
             $rheight.css('height',ratio*$rheightBg.height());
@@ -441,4 +441,13 @@ $(function(){
             }
         })
     });
+});
+
+$(document).ready(function(thisone){
+    var ua = window.navigator.userAgent.toLowerCase();
+    if(ua.match(/MicroMessenger/i) == 'micromessenger'){
+        //window.location.href = 'http://m.d1ev.com';
+        //ws.ws_alert($('.ws_alert'),"请在浏览器里打开",2000);
+        $("#popup2 .tip").html($("#popup2 .tip").html()+"<br><span class='am-text-danger'>请在浏览器里打开</span>")
+    }
 });

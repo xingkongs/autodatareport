@@ -1128,10 +1128,15 @@ body {
 .share--model {
     width:320px;
     margin:0 auto;
-    position:fixed;
-    bottom:0;
+
     display:none;
     /* 包裹可以加inline-block */
+}
+#share--model.share_wrapper{
+    width:100%;
+    position:fixed;
+    bottom:0;
+    background: #fafafa;
 }
 .share--model .share--wraped {
     /*outline:1px solid red;*/
@@ -1316,7 +1321,11 @@ body {
         display:none;
     }
     .ws-content .ws-md h1 {
-        font-size: 24px;
+        font-size: 22px;
+        text-align: left;
+    }
+    .ws-content .ws-md .ws-title-infor {
+        text-align: left!important;
     }
     .am-sticky-placeholder{
         height:auto!important;
