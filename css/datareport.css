@@ -545,6 +545,17 @@ body {
     line-height:60px;
     padding:0 18px;
 }
+#nav .header--wraped span.am-round{
+    display: inline-block;
+    font-size: 14px;
+    padding: 2px 5px 3px;
+    position: relative;
+    bottom: 14px;
+    line-height: 1;
+    right: 20px;
+    background: #f60;
+    color: #fff;
+}
 #nav .header--wraped .division{
     color:#333;
     font-size:16px;
