@@ -1311,9 +1311,6 @@ body {
     body{
         padding:0;
     }
-    .ws-content{
-        width:100%;
-    }
     .ws-content {
         width: 100%;
         min-width: 320px;
@@ -1365,7 +1362,7 @@ body {
     }
     ol, ul {
         padding-left: 2em;
-        width: 100%!important;
+        /*width: 100%!important;*/
     }
 }
 

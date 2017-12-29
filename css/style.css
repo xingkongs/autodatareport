@@ -1,7 +1,7 @@
 /*banner*/
 #banner .banner--wrapped{
     height:350px;
-    background: url("http://www.d1ev.com/new2016/special/ldsite/image/datareportbg.png") no-repeat center;
+    background: url("../image/datareportbg.png") no-repeat center;
 }
 #banner .banner{
     width:1200px;
@@ -83,7 +83,7 @@
 /*banner*/
 .banner--wrapped{
     height:350px;
-    background: url("http://www.d1ev.com/new2016/special/ldsite/image/datareportbg.png") no-repeat;
+    background: url("../image/datareportbg.png") no-repeat;
 }
 #banner .banner{
     width:1200px;
@@ -405,28 +405,28 @@ form .am-selected .am-selected-btn{
     background: #56a8fc;
 }
 #collapse-head  .footer_btn.btn1 .img--wrapper{
-    background: #eee url("http://www.d1ev.com/new2016/special/ldsite/image/shujus.png") no-repeat center;
+    background: #eee url("../image/shujus.png") no-repeat center;
 
 }
 #collapse-head  .footer_btn.btn2 .img--wrapper{
-    background: #eee url("http://www.d1ev.com/new2016/special/ldsite/image/chanliangs.png") no-repeat center;
+    background: #eee url("../image/chanliangs.png") no-repeat center;
 
 }
 #collapse-head  .footer_btn.btn3 .img--wrapper{
-    background: #eee url("http://www.d1ev.com/new2016/special/ldsite/image/peitaos.png") no-repeat center;
+    background: #eee url("../image/peitaos.png") no-repeat center;
 
 }
 #collapse-head  .active .footer_btn.btn1 .img--wrapper,
 #collapse-head .footer_btn.btn1:hover .img--wrapper{
-    background: #f60 url("http://www.d1ev.com/new2016/special/ldsite/image/shujus2.png") no-repeat center;
+    background: #f60 url("../image/shujus2.png") no-repeat center;
 }
 #collapse-head  .active .footer_btn.btn2 .img--wrapper,
 #collapse-head .footer_btn.btn2:hover .img--wrapper{
-    background: #40dc9f url("http://www.d1ev.com/new2016/special/ldsite/image/chanliangs2.png") no-repeat center;
+    background: #40dc9f url("../image/chanliangs2.png") no-repeat center;
 }
 #collapse-head  .active .footer_btn.btn3 .img--wrapper,
 #collapse-head .footer_btn.btn3:hover .img--wrapper{
-    background: #56a8fc url("http://www.d1ev.com/new2016/special/ldsite/image/peitaos2.png") no-repeat center;
+    background: #56a8fc url("../image/peitaos2.png") no-repeat center;
 }
 #collapse-head  .footer_btn:hover .footer_span{
     right:40px;
