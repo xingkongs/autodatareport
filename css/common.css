@@ -124,9 +124,9 @@ a:visited {
     position: absolute;
     top: 50%;
     right: -18px;
-    background-image: url('../image/sprite2.png');
-    background-position: -143px -98px;
+    background: url('../image/sprite2.png') -143px -98px;
     width: 10px;
+    transform: translate(-50%,-50%);
     height: 5px;
 }
 .ws-head .ws-head-colGold {
